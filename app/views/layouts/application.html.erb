@@ -7,9 +7,34 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   </head>
 
   <body>
-    <%= yield %>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="<%= asset_url('coach-icon-png-4.jpg') %>" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          Stupid Coaching App
+        </a>
+      </nav>
+      <div class="header justify-content-center">
+
+      </div>
+
+      <div class="card text-center">
+        <div class="card-header justify-content-center">
+          <h1>Stupid Coaching!</h1>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Ask the great couch a question!</h5>
+          <%= yield %>
+        </div>
+        <div class="card-footer text-muted">
+          My footer kicks!
+        </div>
+      </div>
+
+
+
   </body>
 </html>
